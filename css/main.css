@@ -1,7 +1,38 @@
+/*
+ * Colors from Kuler <kuler.adobe.com>
+ * 
+ * Base: 120E10
+ *       231F20
+ *       464040
+ *       605A5B
+ *       C1BCC0
+ */
 html, body {
-	font-family: Georgia, "Times New Roman", Helvetica, serif;
+	background: #231F20;
+	font: 16px Georgia, "Times New Roman", Helvetica, serif;
+	color: #605A5B;
+	padding: 0;
+	margin: 0;
 }
+
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 	font-style: italic;
+}
+
+/* Header */
+#header {
+	background: #120E10;
+	overflow: hidden;
+	height: 8em;
+}
+#header h1 {
+	font: italic 10em Georgia, Helvetica, serif;
+	color: #231f20;
+	margin: 0;
+}
+
+/* Content */
+#content {
+	padding: 50px;
 }
