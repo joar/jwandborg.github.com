@@ -1,0 +1,7 @@
+html, body {
+	font-family: Georgia, "Times New Roman", Helvetica, serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	fint-style: italic;
+}
