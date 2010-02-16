@@ -18,6 +18,13 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 	font-style: italic;
+	position: relative;
+}
+
+a:link, a:link:visited, a, a:visited {
+	color: #C1BCC0;
+	text-decoration: none;
+	font-style: italic;
 }
 
 /* Header */
@@ -35,4 +42,14 @@ h1, h2, h3, h4, h5, h6 {
 /* Content */
 #content {
 	padding: 50px;
+}
+
+/* Top-link */
+.top-link {
+	font: normal normal 10px Georgia, "Times New Roman", Helvetica, serif;
+	position: absolute;
+	left: -35px;
+}
+h1 .top-link {
+	top: 13px;
 }
