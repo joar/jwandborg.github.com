@@ -1,5 +1,5 @@
-var jwandborg {
+var jwandborg = {
 	init: function () {
-		//alert('Loaded');
- 	}
- }
+		
+	}
+};
