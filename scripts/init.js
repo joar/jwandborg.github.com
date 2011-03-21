@@ -1,5 +1,0 @@
-var jwandborg = {
-	init: function () {
-		
-	}
-};
