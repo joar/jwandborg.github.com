@@ -398,6 +398,43 @@ a:visited {
     color: #777;
 }
 
+/* code */
+pre, code {
+       font-family: Consolas, "Courier new", monospace;
+}
+pre > code {
+       background: none;
+}
+pre {
+       padding: 18px;
+       background: #f5f5f5;
+       hyphens: all;
+       white-space: pre-wrap;
+       hyphenate-character: "\2010";
+}
+code {
+       background: #f7f7f7;
+}
+error {
+       display: inline;
+       color: red;
+       font-weight: bold;
+}
+code.command-user:before {
+       content: "$ ";
+       font-family: Consolas, "Courier new", monospace;
+       color: #777;
+}
+code.command-result:before {
+       content: "→ ";
+       font-family: Consolas, "Courier new", monospace;
+       color: #777;
+}
+code.command-result {
+       background: none;
+       color: #555;
+}
+
 
 
 
