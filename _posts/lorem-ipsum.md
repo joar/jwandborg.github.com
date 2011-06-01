@@ -1,8 +1,7 @@
 ---
-layout: default
-title: Test &ndash; Joar Wandborg
+layout: post
+title: Lorem ipsum
 ---
-# Lorem ipsum
 
 Dolor sit amet consecteteuer adipisicing elit.
     """
