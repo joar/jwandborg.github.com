@@ -1,0 +1,10 @@
+---
+layout: default
+title: Joar Wandborg
+---
+<h2>Latest posts</h2>
+<ul class="post-listing">
+  {% for post in site.posts limit: 7 %}
+  <li><span class="post-listing-date">{{ post.date | date_to_string }}</span> &ndash; <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
