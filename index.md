@@ -2,9 +2,8 @@
 layout: default
 title: Joar Wandborg &ndash GitHub
 ---
-# This works
+## Posts
 
-My name is Joar Wandborg and I would like to thank you 
-for testing this page.
-
-*	[cbstats](/cbstats/) &ndash; CraftBukkit stats
+{% for post in site.posts limit: 7 %}
+*   [{{post.title}}]({{post.url}})
+{% endfor %}

@@ -20,7 +20,12 @@
     <header>
       {{ page.header }}
     </header>
+    {% else %}
+    <header>
+      <h1><a href="/">Joar Wandborg</a></h1>
+    </header>
     {% endif %}
+    <hr />
     <div id="main" role="main">
       {{ content }}
     </div>
