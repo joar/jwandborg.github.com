@@ -307,15 +307,10 @@ li p {
     color: #aaa;
 }
 
-
-
-
-
-
-
-
-
-
+/* Footer */
+footer {
+    text-align: center;
+}
 
 /**
  * Non-semantic helper classes: please define your styles before this section.
