@@ -15,7 +15,13 @@ layout: default
         <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">{{ page.title }}</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://wandborg.se/" property="cc:attributionName" rel="cc:attributionURL">Joar Wandborg</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
     </p>
     <div class="widgets">
-        <a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://wandborg.se{{ page.url }}"></a>
+        <a class="FlattrButton"
+            style="display:none;"
+            rev="flattr;button:compact;"
+            href="http://wandborg.se{{ page.url }}"
+            title="{{ page.title }}"
+            lang="{% if page.lang == 'en' %}en{% else %}se{% endif %}"
+            rel="flattr;tags:blog;"></a>
         <noscript><a href="http://flattr.com/thing/564676/Blah" target="_blank">
                 <img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a></noscript>
     </div>
