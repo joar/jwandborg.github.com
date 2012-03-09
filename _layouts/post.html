@@ -2,8 +2,21 @@
 layout: default
 ---
 <div class="post">
-  <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
-  <div class="post-date">&mdash; {{ page.date | date_to_string }}</div>
-  <hr />
-  <div class="post-body">{{ content }}</div>
+    <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+    <div class="post-date">&mdash; {{ page.date | date_to_string }}</div>
+    <hr />
+    <div class="post-body">
+        {{ content }}
+    </div>
+    <p class="license">
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+            <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" />
+        </a><br />
+        <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">{{ page.title }}</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://wandborg.se/" property="cc:attributionName" rel="cc:attributionURL">Joar Wandborg</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+    </p>
+    <div class="widgets">
+        <a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://wandborg.se{{ page.url }}"></a>
+        <noscript><a href="http://flattr.com/thing/564676/Blah" target="_blank">
+                <img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a></noscript>
+    </div>
 </div>

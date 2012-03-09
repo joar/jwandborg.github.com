@@ -35,7 +35,7 @@ time, mark, audio, video {
 }
 
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section, pc {
   display: block;
 }
 
@@ -130,8 +130,8 @@ input:invalid, textarea:invalid {
 /* These selection declarations have to be separate
    No text-shadow: twitter.com/miketaylr/status/12228805301
    Also: hot pink! */
-::-moz-selection{ background: #5E99FF; color:#fff; text-shadow: none; }
-::selection { background:#5E99FF; color:#fff; text-shadow: none; }
+::-moz-selection{ background: #ffd; color:#000; text-shadow: none; }
+::selection { background:#ffd; color:#000; text-shadow: none; }
 
 /* j.mp/webkit-tap-highlight-color */
 a:link { -webkit-tap-highlight-color: #5E99FF; }
@@ -251,11 +251,12 @@ a:hover, a:active {
 }
 a:visited {
     color: #777;
+    background-color: rgba(20, 20, 20, 0.01);
 }
 
 /* code */
 pre, code {
-    font-family: Consolas, "Courier new", monospace;
+    font-family: Inconsolata, Consolas, "Courier new", monospace;
     font-size: 14px;
 }
 pre > code {
@@ -305,6 +306,19 @@ li p {
 .post .post-date {
     margin-top: -40px;
     color: #aaa;
+}
+
+.privilegied-content, pc {
+    text-align: center;
+    margin: 18px 0;
+}
+    .privilegied-content img, pc img {
+       box-shadow: 0 0 10px black;
+   }
+
+p.license {
+    font-style: italic;
+    opacity: 0.7;
 }
 
 /* Footer */
