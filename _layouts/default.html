@@ -2,9 +2,11 @@
 <head>
   <meta charset="utf-8">
 
-  <title>{{ page.title }}</title>
+  <title>{{ page.title }} | joar</title>
   <meta name="description" content="">
   <meta name="author" content="">
+
+  <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="joar" />
 
   <!-- CSS: implied media="all" -->
   <link rel="stylesheet" href="/css/style.css?v=2">
@@ -26,16 +28,10 @@
 <body>
 
   <div id="container" class="container">
-    {% if page.header %}
     <header>
-      {{ page.header }}
+    <h1><a href="/">joar</a> &mdash; <a href="{{ page.url }}">{{ page.title }}</a></h1>
     </header>
-    {% else %}
-    <header>
-      <h1><a href="/">joar</a></h1>
-    </header>
-    {% endif %}
-    <hr />
+    <hr class="primary-divider" />
     <div id="main" role="main">
       {{ content }}
     </div>
