@@ -7,7 +7,8 @@ My name is Joar Wandborg, <a href="http://mediagoblin.org/">GNU MediaGoblin</a> 
 </p>
 <h2>Latest posts</h2>
 <ul class="post-listing">
-  {% for post in site.posts limit: 7 %}
-  <li><span class="post-listing-date">{{ post.date | date_to_string }}</span> &ndash; <a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
+    {% for post in site.posts limit: 7 %}
+    <li><span class="post-listing-date">{{ post.date | date_to_string }}</span> &ndash; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+    <li><a href="/archive.html">More...</a></li>
 </ul>
