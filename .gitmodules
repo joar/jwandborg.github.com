@@ -1,0 +1,3 @@
+[submodule "qrmem"]
+	path = qrmem
+	url = git@github.com:jwandborg/qrmem.git
